@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Economica|Nunito+Sans" rel="stylesheet">
+    <title>Curriculum Vitae</title>
+    <style>
+            body{
+                margin: 10px;
+                margin-left: 100px;
+            }
+            a[href] {color: whitesmoke;}
+           
+            .navigation {
+                position: absolute;
+                left: 0;
+                width: 12rem;
+                height: 100%;
+                background-color: rgb(11, 11, 83);
+                text-align: center;
+            }
+            .navigation ul {
+                padding: 0;
+                list-style-type: none;
+            }
+            .navigation li {
+                padding: 0.5rem;
+                font-family: "economica";
+                color: white;
+            }
+            .content1 {
+                padding-top: 1rem;
+                margin-left: 12rem;
+            }
+            .content2 {
+                padding-top: 1rem;
+                margin-left: 12rem;
+            }
+            .content3 {
+                padding-top: 1rem;
+                margin-left: 12rem;
+            }
+            .content4 {
+                padding-top: 1rem;
+                margin-left: 12rem;
+            }
+            .ab:hover{
+                transition: 1s;
+                color: darkred; 
+            }
+            .edu:hover{
+                transition: 1s;
+                color: darkred; 
+            }
+            .ski:hover{
+                transition: 1s;
+                color: darkred; 
+            }
+            .wrk:hover{
+                transition: 1s;
+                color: darkred; 
+            }
+        </style>
+</head>
+<body>
+        <div class="navigation">
+                <ul>
+                    <li><img src="https://image.flaticon.com/icons/png/128/149/149071.png"></li>
+                    <li><h2>Fajrin Rin</h2></li>
+                    <li><a class="ab" href="#">About Me</a></li>
+                    <li><a class="edu" href="#">Education</button></li>
+                    <li><a class="ski" href="#">Skill</a></li>
+                    <li><a class="wrk" href="#">Work Experience</a></li>
+                </ul>   
+                <hr>
+                <ul>
+                    <li><a href="https://accounts.google.com" target="_blank"><img src="gmaill.png">&nbsp;cesarfajrin.440@gmail.com</a></li>
+                    <li><img src="phone.png">&nbsp;+62 813 1891 8220</li>
+                </ul>
+            </div>
+            <div class="content1">
+                    <h1>Fajrin Rin</h1>
+                    <div>
+                        <h2>Paragraf 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.
+                        </p>
+                    </div>
+            </div>
+            <div class="content2">
+                    <h1>Educational Background</h1>
+                    <div>
+                        <h2>Paragraf 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    est laborum.
+                        </p>
+                    </div>
+            </div>
+            <div class="content3">
+                     <h1>Sk</h1>
+                     <div>
+                     <h2>Paragraf 3</h2>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                                     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    est laborum.
+                      </p>
+                    </div>
+            </div>
+            <div class="content4">
+                    <h1>Work Experience</h1>
+                    <div>
+                    <h2>Paragraf 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                                       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                       commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                               cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                               est laborum.
+                    </p>
+                    </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $('.content1').show()
+                    $('.content2').hide()
+                    $('.content3').hide()
+                    $('.content4').hide()
+                    $('.ab').click(function(){
+                        $('.content1').fadeToggle('2000')
+                        $('.content2').hide()
+                        $('.content3').hide()
+                        $('.content4').hide()
+                    })
+                    $('.edu').click(function(){
+                        $('.content2').fadeToggle('2000')
+                        $('.content1').hide()
+                        $('.content3').hide()
+                        $('.content4').hide()
+                    })
+                    $('.ski').click(function(){
+                        $('.content3').fadeToggle('2000')
+                        $('.content1').hide()
+                        $('.content2').hide()
+                        $('.content4').hide()
+                    })
+                    $('.wrk').click(function(){
+                        $('.content4').slideDown(1000)
+                        $('.content1').hide()
+                        $('.content2').hide()
+                        $('.content3').hide()
+                    })
+                })
+            </script>
+
+</body>
+</html>
